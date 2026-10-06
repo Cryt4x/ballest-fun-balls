@@ -1,0 +1,16 @@
+# The digit 0 in seven segments, 14 cm wide and 26 high, facing -x (the camera); the plugin turns and sizes it.
+# Each segment has a black rim behind it.
+material fill glow #ff9a1e bright=3
+material line plastic #000000 rough=1
+box fill size=2,11,3 at=0,0,13
+box line size=1,13.5,5.5 at=1.2,0,13
+box fill size=2,3,11 at=0,7,6.5
+box line size=1,5.5,13.5 at=1.2,7,6.5
+box fill size=2,3,11 at=0,7,-6.5
+box line size=1,5.5,13.5 at=1.2,7,-6.5
+box fill size=2,11,3 at=0,0,-13
+box line size=1,13.5,5.5 at=1.2,0,-13
+box fill size=2,3,11 at=0,-7,-6.5
+box line size=1,5.5,13.5 at=1.2,-7,-6.5
+box fill size=2,3,11 at=0,-7,6.5
+box line size=1,5.5,13.5 at=1.2,-7,6.5

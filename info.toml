@@ -1,9 +1,9 @@
 [meta]
 name = "Fun-Balls"
-version = "1.1.36"
+version = "1.2.11"
 author = "CryT4x"
 description = "Four clear balls: Checkpoint-Arrow, Speedometer, Clock, Kettle."
-min_host = "0.20.0"
+min_host = "0.23.4"
 dependencies = ["cosmetic-kit"]
 
 [script]
