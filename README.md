@@ -49,4 +49,4 @@ Each setting's name starts with the ball it belongs to (Arrow, Speedometer, Time
 ## Notes
 
 - Everything inside is drawn around the ball's middle each frame and doesn't roll with the ball.
-- Replays and ghosts don't show it, only your own ball.
+- Only visible while playing on maps
