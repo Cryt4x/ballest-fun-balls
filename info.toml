@@ -1,0 +1,11 @@
+[meta]
+name = "Fun-Balls"
+version = "1.1.33"
+author = "CryT4x"
+description = "Four clear balls: an arrow that points to the next checkpoint, a speed display, a run timer, and a steaming kettle."
+min_host = "0.20.0"
+dependencies = ["cosmetic-kit"]
+
+[script]
+files = ["main.as"]
+assets = ["*.png", "models/*.txt"]

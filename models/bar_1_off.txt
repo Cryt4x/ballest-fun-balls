@@ -1,0 +1,5 @@
+# Bar 1, grey, of the Speed Ball's gauge, 6 cm high, facing -x (the camera); the plugin turns it. Black rim behind it.
+material fill plastic #5a5a5a rough=0.8
+material line plastic #000000 rough=1
+box fill size=2,7,6 at=0,0,0
+box line size=1,9.5,8.5 at=1.2,0,0

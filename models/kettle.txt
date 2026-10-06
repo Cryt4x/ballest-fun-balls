@@ -1,0 +1,11 @@
+# A kettle at the ball's middle, spout along +x (the plugin turns it the way the ball goes). The ball's radius is
+# about 47.5; it stands on the ball's bottom; the flames come out around its foot. Spout tip: about 27, 0, -18.
+material steel metal #d8dce0 rough=0.25
+material black plastic #151515 rough=0.6
+material red plastic #d83030 rough=0.4
+cylinder steel r=17 h=26 at=0,0,-40
+cylinder red r=17.4 h=3 at=0,0,-31
+cylinder steel r=12 h=3 at=0,0,-14
+sphere black r=3.5 at=0,0,-9.5
+cylinder steel r=3 h=17 at=13,0,-32 rot=-50,0,0
+ring black r=10 thick=2.5 degrees=180 at=-17,0,-27 rot=0,90,90

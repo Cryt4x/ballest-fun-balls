@@ -1,0 +1,5 @@
+# One small flame under the kettle, standing on its foot (the plugin flickers its size and places a ring of them).
+material outer glow #ff5a10 bright=6
+material inner glow #ffd040 bright=8
+cone outer r=2.6 top=0 h=8
+cone inner r=1.4 top=0 h=5 at=0,0,0.3

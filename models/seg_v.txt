@@ -1,0 +1,5 @@
+# A standing segment of a seven-segment digit, facing -x (the camera); the plugin turns it. Black rim behind it.
+material fill glow #ff9a1e bright=3
+material line plastic #000000 rough=1
+box fill size=2,3,11 at=0,0,0
+box line size=1,5.5,13.5 at=1.2,0,0

@@ -1,0 +1,9 @@
+# The arrow's stand: a pole from the ball's bottom up to its middle, where the arrow turns, on a round foot. It stays
+# upright (the plugin only moves it). The ball's radius is about 47.5. The foot has a black rim like the arrow's
+# outline: a wider, thinner black disc inside the thicker grey one.
+material metal metal #c8c8c8 rough=0.3
+material line plastic #000000 rough=1
+cylinder metal r=15 h=4 at=0,0,-44
+cylinder line r=17.5 h=2 at=0,0,-43
+cylinder metal r=2.2 h=42 at=0,0,-41
+sphere metal r=4.2

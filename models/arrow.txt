@@ -1,0 +1,11 @@
+# A flat cartoon arrow through the ball's middle, pointing along +x (the plugin turns it). The ball's radius is about
+# 47.5. The outline is a black arrow a little larger but thinner behind the coloured one: from above and below the
+# coloured one covers its middle, so only a black rim shows around the edges.
+material fill glow #ffc81e bright=2
+material line plastic #000000 rough=1
+# coloured arrow: shaft x -24..8, head 8..30
+box fill size=32,10,5 at=-8,0,0
+cone fill r=14 top=0 h=22 at=8,0,0 rot=-90,0,0 scale=0.25,1,1
+# black outline: 1.5-3 wider all round
+box line size=35,14,3 at=-8,0,0
+cone line r=18 top=0 h=27.5 at=5.5,0,0 rot=-90,0,0 scale=0.14,1,1

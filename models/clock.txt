@@ -1,0 +1,47 @@
+# The Timer Ball's clock: a grey case with rounded ends, 30 cm high, 15 deep, 84 wide, its face toward -x (the camera;
+# the plugin turns it). On the face a red rim and, inset, black behind the digits (which the plugin puts at x = -9.5).
+# Under it four small red feet (balls half out), on top a rocker switch, half as wide, marked ON (pressed down) and OFF.
+material case metal #8c8c90 rough=0.45
+material rim plastic #d82020 rough=0.4
+material face plastic #050505 rough=0.9
+box case size=15,54,30 at=0,0,0
+cylinder case r=15 h=15 at=-7.5,-27,0 rot=-90,0,0
+cylinder case r=15 h=15 at=-7.5,27,0 rot=-90,0,0
+# the red rim: a thin stadium on the front
+box rim size=1,54,30 at=-7.9,0,0
+cylinder rim r=15 h=1 at=-8.4,-27,0 rot=-90,0,0
+cylinder rim r=15 h=1 at=-8.4,27,0 rot=-90,0,0
+# black inside the rim
+box face size=1,56,22 at=-8.3,0,0
+cylinder face r=11 h=1 at=-8.8,-28,0 rot=-90,0,0
+cylinder face r=11 h=1 at=-8.8,28,0 rot=-90,0,0
+material foot plastic #d82020 rough=0.4
+material switch plastic #1a1a1a rough=0.6
+material rocker plastic #3a3a3a rough=0.5
+material text glow #ffffff bright=2
+# the feet: balls half out of the bottom
+sphere foot r=3 at=-4,-30,-15
+sphere foot r=3 at=4,-30,-15
+sphere foot r=3 at=-4,30,-15
+sphere foot r=3 at=4,30,-15
+# the rocker switch on top, half as wide as the clock: its frame, then the ON half pressed down and the OFF half up
+box switch size=10,44,1.5 at=0,0,15.7
+box rocker size=8,21,1.6 at=0,-10.5,16.9
+box rocker size=8,21,3 at=0,10.5,17.6
+box text size=4.80,0.9,0.3 at=0.00,-13.85,17.85
+box text size=4.80,0.9,0.3 at=0.00,-11.55,17.85
+box text size=0.9,3.20,0.3 at=1.95,-12.70,17.85
+box text size=0.9,3.20,0.3 at=-1.95,-12.70,17.85
+box text size=4.80,0.9,0.3 at=0.00,-9.45,17.85
+box text size=4.80,0.9,0.3 at=0.00,-7.15,17.85
+box text size=5.32,0.9,0.3 at=0.00,-8.30,17.85 rot=0,-25.6,0
+box text size=4.80,0.9,0.3 at=0.00,4.95,19.25
+box text size=4.80,0.9,0.3 at=0.00,7.25,19.25
+box text size=0.9,3.20,0.3 at=1.95,6.10,19.25
+box text size=0.9,3.20,0.3 at=-1.95,6.10,19.25
+box text size=4.80,0.9,0.3 at=0.00,9.35,19.25
+box text size=0.9,3.20,0.3 at=1.95,10.50,19.25
+box text size=0.9,2.56,0.3 at=0.00,10.18,19.25
+box text size=4.80,0.9,0.3 at=0.00,13.75,19.25
+box text size=0.9,3.20,0.3 at=1.95,14.90,19.25
+box text size=0.9,2.56,0.3 at=0.00,14.58,19.25

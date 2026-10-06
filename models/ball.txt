@@ -1,0 +1,3 @@
+# The ball: tinted like Clear-Tec-Balls' Clear, so the arrow inside shows.
+material tint glass #baf7ff opacity=0.20
+sphere tint r=50
