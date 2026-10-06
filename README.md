@@ -9,12 +9,12 @@ Pick the balls on the Customize page.
 - **Checkpoint Arrow**: An arrow on a stand that always points to the next checkpoint,
   with small Tesla-coil lightning flickering from its middle out to the ball.
   The arrow points at the nearest one not yet touched this run.
-  When all are touched, or the track has none, the arrow is red and spins, level.
+  When all are touched, or the track has none, the arrow is red and spins.
 - **Speed Ball**: The speed as a two-digit number (seven-segment style) that always faces the camera, in the
   same units as the game's speedometer. Under it a gauge of five bars side by side. Each lit in its own colour
   (green to red) from 1, 15, 30, 45 and 59.
 - **Timer Ball**: The run's time as "MM:SS.hh" in a 3D digital clock.
-  Plugins can't read the game's own timer, so the plugin times the run itself; it can differ a little from the game's.
+  The plugin times the run itself; it can differ a little from the game's.
 - **Kettle-Ball**: A kettle seen from the side with small flickering flames coming out around its foot; The faster the ball goes, the more steam comes out of its spout.
 
 ## Settings
