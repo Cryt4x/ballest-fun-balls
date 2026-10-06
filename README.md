@@ -34,18 +34,6 @@ Each setting's name starts with the ball it belongs to (Arrow, Speedometer, Time
 | Timer: Clock standing on ground | off | The clock stands on its feet at the bottom of the ball (a little smaller) instead of floating in the middle |
 | Kettle: Steam | 1 | How much steam for the speed (0-3) |
 
-## Files
-
-- `main.as`: the plugin
-- `models/ball.txt`: the tinted ball
-- `models/arrow.txt`, `models/stand.txt`: arrow and stand
-- `models/seg_h.txt`, `models/seg_v.txt`: segments of the speed digits
-- `models/bar_1.txt` .. `bar_5.txt`, `bar_1_off.txt` .. `bar_5_off.txt`: the speed gauge's bars, lit and grey
-- `models/clock.txt`, `models/dot.txt`: the timer's clock and its dots (for . and :)
-- `models/kettle.txt`, `models/flame.txt`: the kettle and one of its flames
-- `preview*.png`: the balls' pictures on the Customize page (screenshots from the game)
-- `icon.png`: the plugin's icon (the Speed Ball's picture)
-
 ## Notes
 
 - Everything inside is drawn around the ball's middle each frame and doesn't roll with the ball.
