@@ -83,8 +83,8 @@ void Update(float dt)
     if (onTrack && worn == ARROW_ID && Shown) ArrowFrame(x, y, z); else HideArrow();
     if (onTrack && worn == SPEED_ID) SpeedFrame(x, y, z); else HideSpeed();
     if (onTrack && worn == KETTLE_ID) KettleFrame(x, y, z); else HideKettle();
-    RunClock(dt, onTrack);
-    if (onTrack && worn == TIMER_ID) TimerFrame(x, y, z); else HideTimer();
+    RunClock(dt);
+    if (onTrack && worn == TIMER_ID) TimerFrame(x, y, z); else HideTimer();   // gone at the finish, as edd wants
 }
 
 void Follow(double x, double y, double z, float dt)
@@ -540,7 +540,7 @@ void HideKettle()
 // The run's time as "MM:SS.hh" in the Speed Ball's digits (smaller), in a 3D digital clock
 // (models/clock.txt: a grey case as deep as it is high, black behind the digits, a red rim at the front), all facing
 // the camera. Plugins can't read the game's own timer, so the plugin keeps one: from 0 at each new run (RunId),
-// counting while the race is on (IsActive) and not paused, and standing still at the finish. It can differ a little
+// counting while the race is on (IsActive) and not paused, so it stands still at the finish. It can differ a little
 // from the game's.
 const int TIMER_SLOTS = 8;                  // "MM:SS.hh"
 const double T_SCALE = 0.48;               // of the Speed Ball's digits
@@ -554,15 +554,17 @@ int clock = 0;
 double runClock = 0;
 int clockRun = -1;
 
-void RunClock(float dt, bool onTrack)
+// Counts while the race runs: the game turns IsActive off at the finish, so the time stands still there. IsComplete
+// isn't asked: it can stay on into the next run, which then never counted (edd, 2026-10-06).
+void RunClock(float dt)
 {
-    if (!onTrack) return;
+    if (!Race::OnTrack()) return;
     if (Race::RunId() != clockRun)
     {
         clockRun = Race::RunId();
         runClock = 0;
     }
-    if (Race::IsActive() && !Race::IsPaused() && !Race::IsComplete())
+    if (Race::IsActive() && !Race::IsPaused())
         runClock += dt;
 }
 
