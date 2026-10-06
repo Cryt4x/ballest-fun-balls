@@ -6,18 +6,16 @@ Pick the balls on the Customize page.
 
 ## Balls
 
-- **Checkpoint Arrow**: a yellow cartoon arrow (black outline) on a stand that always points to the next checkpoint,
+- **Checkpoint Arrow**: An arrow on a stand that always points to the next checkpoint,
   with small Tesla-coil lightning flickering from its middle out to the ball.
-  The game doesn't tell which checkpoint comes next, so the arrow points at the nearest one not yet touched this run;
-  a restart starts over. When all are touched (or the track has none) the arrow hides.
-- **Speed Ball**: the speed as a two-digit number (seven-segment style, up to 99) that always faces the camera, in the
-  same units as the game's speedometer. Under it a gauge of five bars side by side, each higher than the last: grey at 0, each lit in its own colour
+  The arrow points at the nearest one not yet touched this run.
+  When all are touched (or the track has none) the arrow hides.
+- **Speed Ball**: The speed as a two-digit number (seven-segment style) that always faces the camera, in the
+  same units as the game's speedometer. Under it a gauge of five bars side by side. Each lit in its own colour
   (green to red) from 1, 15, 30, 45 and 59.
-- **Timer Ball**: the run's time as "MM:SS.hh" in a 3D digital clock facing the camera: a grey
-  case half as deep as it is high, black behind the digits, a red rim at the front, small red feet and an ON/OFF rocker switch on top, half as wide as the clock.
-  Plugins can't read the game's own timer, so the plugin times the run itself (from each new run, while the race
-  is on and not paused, stopping at the finish); it can differ a little from the game's.
-- **Kettle-Ball**: a kettle seen from the side, its spout to the left, with 14 small flickering flames coming out around its foot; the faster the ball goes, the more steam comes out of its spout. The steam is shut in: it rises and slides along the ball's wall up to the top.
+- **Timer Ball**: The run's time as "MM:SS.hh" in a 3D digital clock.
+  Plugins can't read the game's own timer, so the plugin times the run itself; it can differ a little from the game's.
+- **Kettle-Ball**: A kettle seen from the side with small flickering flames coming out around its foot; The faster the ball goes, the more steam comes out of its spout.
 
 ## Settings
 
