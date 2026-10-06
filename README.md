@@ -1,7 +1,7 @@
 # Fun-Balls
 
 A Ballest plugin by CryT4x that adds four clear balls (tinted light blue like Clear-Tec-Balls' Clear, opacity 0.2) with something inside.
-Needs [Cosmetic Kit](https://github.com/AnythingGoes-ballest/ballest-plugin-manager) and host 0.20.0 or newer.
+Needs Cosmetic Kit and host 0.20.0 or newer.
 Pick the balls on the Customize page.
 
 ## Balls
